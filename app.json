@@ -1,0 +1,24 @@
+{
+    "pages": [
+        "pages/index/index",
+        "pages/home/home",
+        "pages/start_page/start_page",
+        "pages/personal_center/personal_center",
+        "pages/Recharge/Recharge",
+        "pages/personal_info/personal_info",
+        "pages/my_challenge/myChallenge",
+        "pages/challenge_user/challenge_user",
+        "pages/active/active",
+        "pages/problem/problem",
+        "pages/service_agreement/service_agreement",
+        "pages/tixian_rule/tixian_rule",
+        "pages/howtoplay/howtoplay",
+        "pages/DownloadApp/DownloadApp"
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#fff",
+        "navigationBarTitleText": "WeChat",
+        "navigationBarTextStyle": "black"
+    }
+}

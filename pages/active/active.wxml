@@ -1,0 +1,11 @@
+<view class="content">
+    <view bindtap="project_id" class="active" data-index="{{index}}" wx:for="{{active}}">
+        <view class="active_name">{{item.project_name}}</view>
+        <view class="introduce">{{item.introduction}}</view>
+        <image class="challenge_img" src="{{item.project_img}}"></image>
+        <view class="active_classname_bg"></view>
+        <view class="active_classname" wx:if="{{item.project_type=='系统'}}">系统</view>
+        <view class="active_classname" wx:elif="{{item.project_type=='参与'}}">参与</view>
+        <view class="active_classname" wx:elif="{{item.project_type=='创建'}}">创建</view>
+    </view>
+</view>

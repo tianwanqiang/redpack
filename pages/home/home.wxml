@@ -1,0 +1,95 @@
+<view class="main">
+    <view bindtap="cancle" class="cover_layer" style="display:{{is_block==true?'block':'none'}}"></view>
+    <view class="active" style="height:{{h}}px">
+        <image class="bg" src="{{data.background_img}}"></image>
+        <view class="active_detail">
+             <view class="nav" bindtap='turn_to'> 
+             <!-- <button class="nav_to_person" open-type='getUserInfo' bindgetuserinfo='turn_to'>  -->
+               <image class="nav_to_person" src="../../image/personal_center/home_person.png"></image>  
+             </view> 
+            <view class="act_name">{{data.content_json.title}}</view>
+            <view class="tip">{{data.content_json.sub_title}}</view>
+            <view class="number">{{total_money}}</view>
+            <view class="Detailed_hints">{{str1}}
+        <text class="real_num">{{data.total_count}}</text>{{str2}}</view>
+            <navigator url="../../pages/challenge_user/challenge_user?date={{datelist}}">
+                <view class="user">
+                    <image class="img" src="{{item}}" wx:for="{{data.head_imgs}}"></image>
+                </view>
+            </navigator>
+            <view bindtap="howtoplay" class="showyou">
+                <view class="tell_you">参与游戏规则
+          <image class="htp" src="../../image/howtoplay.png"></image>
+                    <view class="line"></view>
+                </view>
+            </view>
+            <button class="share invite" openType="share">
+                <image class="share_img" src="../../image/invite.png"></image>
+            </button>
+        </view>
+    </view>
+    <view class="space"></view>
+    <view bindtap="wxpay" class="join">{{hint}}</view>
+    <!-- <view bindtap="downloadApp" class="join join1">下载APP</view> -->
+    <view class="rank_num1" style="display:{{rank}}">
+        <view class="rank">今日荣耀榜
+      <text class="success">{{data.success_count}}</text>
+            <text class="txt">成功</text>
+            <text class="fail">{{data.fail_count}}</text>
+            <text class="txt">失败</text>
+        </view>
+        <view class="star">
+            <view class="star_head">
+                <image class="star_header" src="{{data.tags[0]?data.tags[0].head_img:'../../image/default-l.png'}}"></image>
+                <view class="top_name shape1"></view>
+                <image class="icon" src="../../image/weakup.png"></image>
+                <view class="icon-title">{{data.tags[0].tag_name}}</view>
+            </view>
+            <view class="star_detail">
+                <view class="star_name">{{data.tags[0].username}}</view>
+                <view class="star_thing">{{data.tags[0].tag_data}}</view>
+            </view>
+        </view>
+        <view class="star" wx:if="{{data.tags.length>=2}}">
+            <view class="star_head">
+                <image class="star_header" src="{{data.tags[1]?data.tags[1].head_img:'../../image/default-l.png'}}"></image>
+                <view class="top_name shape2"></view>
+                <image class="icon1" src="../../image/lucky.png"></image>
+                <view class="icon-title">{{data.tags[1].tag_name}}</view>
+            </view>
+            <view class="star_detail">
+                <view class="star_name">{{data.tags[1].username}}</view>
+                <view class="star_thing">{{data.tags[1].tag_data}}</view>
+            </view>
+        </view>
+        <view class="star" wx:if="{{data.tags.length==3}}">
+            <view class="star_head">
+                <image class="star_header" src="{{data.tags[2]?data.tags[2].head_img:'../../image/default-l.png'}}"></image>
+                <view class="top_name shape3"></view>
+                <image class="icon2" src="../../image/insist.png"></image>
+                <view class="icon-title">{{data.tags[2].tag_name}}</view>
+            </view>
+            <view class="star_detail">
+                <view class="star_name">{{data.tags[2].username}}</view>
+                <view class="star_thing">{{data.tags[2].tag_data}}</view>
+            </view>
+        </view>
+        <view class="clear"></view>
+    </view>
+    <view class="choose_pay_way" style="display:{{is_show==true?'block':'none'}}">
+        <view class="pay_title">支付挑战契约金
+      <text>{{data.join_amount/100}} </text>元</view>
+        <view bindtap="choose_payway" class="way1" data-index="0">
+            <image class="pay_logo" src="../../image/safety/wxpay.png"></image>
+            <text class="way_name">微信</text>
+            <image class="choose" src="{{or}}"></image>
+        </view>
+        <view bindtap="choose_payway" class="way1" data-index="1">
+            <image class="logo1" src="../../image/safety/wallet.png"></image>
+            <text class="way_name">钱包余额<text class="yuE">{{balance}}元</text>
+            </text>
+            <image class="choose" src="{{or1}}"></image>
+        </view>
+        <button bindtap="challenge" class="now_challenge">立即挑战</button>
+    </view>
+</view>

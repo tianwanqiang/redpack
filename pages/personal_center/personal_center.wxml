@@ -1,0 +1,48 @@
+<view class="content">
+    <view class="top">
+        <view class="header_box">
+            <image bindtap="to_personal_info" class="header" src="{{head}}"></image>
+        </view>
+        <view class="name">{{name}}</view>
+    </view>
+    <view class="money_box">
+        <view class="money">
+            <view class="money_kind">累计契约(元)</view>
+            <view class="money_value">{{contract}}</view>
+        </view>
+        <view class="money">
+            <view class="money_kind">累计瓜分(元)</view>
+            <view class="money_value">{{harvest}}</view>
+        </view>
+        <view class="money">
+            <view class="money_kind">挑战次数(次)</view>
+            <view class="money_value">{{join_count}}</view>
+        </view>
+    </view>
+    <view class="space"></view>
+    <navigator url="../../pages/my_challenge/myChallenge">
+        <view class="list line">
+            <image class="icon" src="../../image/personal_center/challeng.png"></image>我的挑战
+      <image class="arrow" src="../../image/arrow.png"></image>
+        </view>
+    </navigator>
+    <navigator url="../../pages/Recharge/Recharge">
+        <view class="list line">
+            <image class="icon" src="../../image/personal_center/wallet.png"></image>我的充值
+      <image class="arrow" src="../../image/arrow.png"></image>
+            <text class="balance">余额：{{balance}}元</text>
+            <text class="safe_hint">账户安全保障中</text>
+        </view>
+    </navigator>
+    <navigator url="../../pages/problem/problem">
+        <view class="list line">
+            <image class="icon" src="../../image/personal_center/qusion.png"></image>常见问题
+      <image class="arrow" src="../../image/arrow.png"></image>
+        </view>
+    </navigator>
+    <view class="list line">
+        <image class="icon" src="../../image/kefu.png"></image>
+        <button class="contact" openType="contact">客服服务</button>
+        <image class="arrow" src="../../image/arrow.png"></image>
+    </view>
+</view>

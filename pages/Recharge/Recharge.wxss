@@ -1,0 +1,162 @@
+page {
+    width: 100%;
+    height: 100%;
+    font-family: "microsoft yahei";
+    position: relative;
+}
+
+.content {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    background-color: #ff7102;
+    padding-bottom: 60rpx;
+}
+
+.top_title {
+    height: 50rpx;
+    color: #fff;
+    font-size: 32rpx;
+}
+
+.get_money {
+    height: 100rpx;
+    line-height: 100rpx;
+    font-size: 80rpx;
+    color: #ffffff;
+}
+
+.rule {
+    height: 50rpx;
+    color: #fff;
+    font-size: 32rpx;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.hint_txt {
+    width: auto;
+    height: 40rpx;
+    margin: 10rpx;
+    color: #ffb788;
+    font-size: 28rpx;
+}
+
+.space {
+    width: 100%;
+    height: 30rpx;
+    background-color: #f8f8f8;
+}
+
+.online_recharge {
+    width: 100%;
+    height: auto;
+    padding: 0 6%;
+    box-sizing: border-box;
+}
+
+.online {
+    width: 100%;
+    height: auto;
+    padding: 30rpx 0;
+    font-size: 28rpx;
+    text-align: center;
+    color: #7e7e7e;
+}
+
+.recharge_money {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.money_box {
+    width: 30%;
+    height: 100rpx;
+    margin: 1.5%;
+    border: 2rpx solid #979797;
+    color: #383838;
+    text-align: center;
+    font-size: 28rpx;
+    border-radius: 10rpx;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.money {
+    font-size: 40rpx;
+    line-height: 40rpx;
+}
+
+.money_box text {
+    font-size: 24rpx;
+    line-height: 26rpx;
+}
+
+.hint {
+    width: 100%;
+    text-align: center;
+    color: #ff7102;
+    padding: 8rpx 0;
+    font-size: 28rpx;
+}
+
+.custom_money {
+    width: 97%;
+    height: 90rpx;
+    border: 2rpx solid #979797;
+    border-radius: 8rpx;
+    padding: 0 10rpx;
+    box-sizing: border-box;
+    caret-color: #ff7102;
+    font-size: 40rpx;
+    color: #ff7102;
+    text-align: center;
+    margin: 80rpx 0;
+}
+
+.hint1 {
+    color: #ffc9a5;
+    font-size: 36rpx;
+    text-align: left;
+}
+
+.recharge {
+    width: 97%;
+    height: 100rpx;
+    background-color: #ff7102;
+    color: #ffffff;
+    line-height: 100rpx;
+    box-sizing: border-box;
+    float: left;
+    margin-bottom: 10rpx;
+}
+
+.hint3 {
+    width: 100%;
+    height: 28rpx;
+    text-align: center;
+    padding: 20rpx 0;
+    font-size: 28rpx;
+    color: #6c6c6c;
+}
+
+.addbg {
+    background-color: #ff7102;
+    color: #ffffff;
+    border: none;
+}

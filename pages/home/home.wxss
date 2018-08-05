@@ -1,0 +1,526 @@
+page {
+    width: 100%;
+    height: 100%;
+}
+
+.main {
+    width: 100%;
+    height: auto;
+    padding: 1.5% 2.5% 1.5% 2.5%;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.cover_layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.3);
+    z-index: 995;
+}
+
+.active {
+    width: 100%;
+    height: 55%;
+    box-shadow: 0 0 30rpx #ccc;
+    position: relative;
+    border-top-left-radius: 6rpx;
+    border-top-right-radius: 6rpx;
+    border-bottom-left-radius: 30rpx;
+    border-bottom-right-radius: 30rpx;
+}
+
+.nav {
+    position: absolute;
+    top: 4%;
+    left: 4%;
+    width: auto;
+    padding: 20rpx;
+    z-index: 10;
+}
+
+.nav1 {
+    position: absolute;
+    top: 4%;
+    right: 4%;
+    width: auto;
+    padding: 20rpx;
+    z-index: 10;
+}
+
+.nav_to_person {
+    position: absolute;
+    top: 4%;
+    left: 4%;
+    width: 44rpx;
+    height: 48rpx;
+    border: none;
+   background: url("https://bpic.588ku.com/original_pic/18/05/31/be95ac2866c73a2339235768e1375b51.jpg!/fw/208/quality/90/unsharp/true/compress/true") no-repeat 100% auto center ;
+}
+
+.active_detail {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 500;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.act_name {
+    position: absolute;
+    top: 5%;
+    left: 0;
+    width: 100%;
+    font-size: 34rpx;
+}
+
+.tip {
+    width: 100%;
+    height: 80rpx;
+    line-height: 80rpx;
+    font-size: 30rpx;
+    margin-top: 60rpx;
+    position: absolute;
+    left: 0;
+    top: 2%;
+}
+
+.number {
+    width: 100%;
+    height: 80rpx;
+    line-height: 80rpx;
+    font-size: 80rpx;
+    font-weight: bold;
+    color: #ff7012;
+    position: absolute;
+    left: 0;
+    top: 22%;
+}
+
+.Detailed_hints {
+    width: 100%;
+    height: 80rpx;
+    line-height: 80rpx;
+    font-size: 32rpx;
+    position: absolute;
+    left: 0;
+    top: 36%;
+}
+
+.real_num {
+    color: #ff7012;
+}
+
+.user {
+    display: flex;
+    flex-direction: row;
+    height: 90rpx;
+    width: 100%;
+    justify-content: center;
+    position: absolute;
+    left: 0;
+    top: 48%;
+}
+
+.img {
+    width: 70rpx;
+    height: 70rpx;
+    margin-left: -35rpx;
+    border: 2rpx solid #f3f3f3;
+    border-radius: 50%;
+}
+
+.img:first-child {
+    margin: 0;
+}
+
+.bg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+}
+
+.space {
+    width: 100%;
+    height: 2%;
+    margin-top: 2%;
+}
+
+.join {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 90rpx;
+    color: #ffffff;
+    justify-content: center;
+    line-height: 90rpx;
+    font-size: 32rpx;
+    border-radius: 45rpx;
+    box-shadow: 0 10rpx 10rpx #ffe1ce;
+    background: linear-gradient(to right,#ff7102,#ffad01);
+    margin-top: 35rpx;
+}
+
+.join1 {
+    margin-top: 20rpx;
+}
+
+.rank {
+    width: 100%;
+    padding: 32rpx 0;
+    font-size: 32rpx;
+}
+
+.rank_num1 {
+    width: 100%;
+    height: auto;
+}
+
+.tell_you {
+    width: auto;
+    height: 34rpx;
+    line-height: 34rpx;
+    color: #11ce8d;
+    margin-top: 5%;
+    font-size: 30rpx;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.htp {
+    width: 30rpx;
+    height: 25rpx;
+    margin-left: 10rpx;
+    vertical-align: middle;
+}
+
+.showyou {
+    width: auto;
+    position: absolute;
+    left: 25%;
+    top: 64%;
+}
+
+.line {
+    position: absolute;
+    bottom: -4rpx;
+    left: 0;
+    width: 90%;
+    height: 2rpx;
+    background-color: #11ce8d;
+}
+
+.invite {
+    margin-top: 50rpx;
+    width: 60%;
+    height: 15%;
+    padding: 0;
+    border-radius: 40rpx;
+    position: absolute;
+    left: 20%;
+    top: 72%;
+}
+
+.share_img {
+    width: 100%;
+    height: 100%;
+}
+
+.success {
+    display: inline-block;
+    width: auto;
+    font-size: 26rpx;
+    color: #ff372d;
+    margin-left: 30rpx;
+}
+
+.fail {
+    display: inline-block;
+    width: auto;
+    font-size: 26rpx;
+    color: #11ce8d;
+    margin-left: 30rpx;
+}
+
+.txt {
+    color: #766e7d;
+    font-size: 28rpx;
+}
+
+.star {
+    width: 33%;
+    height: 100%;
+    float: left;
+    text-align: center;
+}
+
+.star_head {
+    position: relative;
+    width: 100%;
+    height: 65%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.top_name {
+    position: absolute;
+    bottom: -11%;
+    left: 21%;
+    width: 50%;
+}
+
+.shape1 {
+    border-top: 40rpx solid #e5c3b2;
+    border-left: 12rpx solid transparent;
+    border-right: 12rpx solid transparent;
+    box-shadow: -12rpx 5rpx 10rpx #f4e3c4;
+}
+
+.shape2 {
+    border-top: 40rpx solid #c891d3;
+    border-left: 12rpx solid transparent;
+    border-right: 12rpx solid transparent;
+    box-shadow: -12rpx 5rpx 10rpx #e8d4ec;
+}
+
+.shape3 {
+    border-top: 40rpx solid #e89999;
+    border-left: 12rpx solid transparent;
+    border-right: 12rpx solid transparent;
+    box-shadow: -12rpx 5rpx 10rpx #f6dbdd;
+}
+
+.icon {
+    position: absolute;
+    bottom: -14%;
+    left: 8%;
+    width: 60rpx;
+    height: 70rpx;
+}
+
+.icon1 {
+    position: absolute;
+    bottom: -14%;
+    left: 9%;
+    width: 60rpx;
+    height: 70rpx;
+}
+
+.icon2 {
+    position: absolute;
+    bottom: -14%;
+    left: 11%;
+    width: 60rpx;
+    height: 70rpx;
+}
+
+.icon-title {
+    position: absolute;
+    bottom: -6%;
+    left: 30%;
+    font-size: 24rpx;
+    color: #ffffff;
+}
+
+.star_detail {
+    width: 100%;
+    height: 30%;
+    margin-top: 40rpx;
+}
+
+.star_header {
+    width: 140rpx;
+    height: 140rpx;
+    border-radius: 50%;
+}
+
+.star_name {
+    font-size: 28rpx;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    padding: 0 30rpx;
+    line-height: 32rpx;
+}
+
+.star_thing {
+    color: #ff7012;
+    font-size: 28rpx;
+    line-height: 36rpx;
+}
+
+.cover_content {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    padding-top: 40rpx;
+    z-index: 999;
+    background-color: #ffffff;
+    border-top-left-radius: 10rpx;
+    border-top-right-radius: 10rpx;
+}
+
+.share_title {
+    width: 100%;
+    font-size: 40rpx;
+    text-align: center;
+    padding: 10rpx 0;
+}
+
+.share_to {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.way {
+    width: 50%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon_share {
+    display: inline-block;
+    padding: 0;
+    width: 100rpx;
+    height: 100rpx;
+    margin: 50rpx 0 0 0;
+    border-radius: 50rpx;
+}
+
+.icon_share_img {
+    width: 100%;
+    height: 100%;
+}
+
+.txt_share {
+    font-size: 32rpx;
+    color: #a8a8a8;
+    margin-top: 10rpx;
+}
+
+.not_share {
+    width: 100%;
+    text-align: center;
+    padding: 20rpx 0 40rpx 0;
+    font-size: 32rpx;
+}
+
+.store_img {
+    width: 300rpx;
+    height: 80rpx;
+    line-height: 80rpx;
+    border-radius: 45rpx;
+    font-size: 32rpx;
+    background-color: #ff7012;
+    text-align: center;
+    color: #ffffff;
+    position: absolute;
+    bottom: 40rpx;
+    left: 50%;
+    margin-left: -150rpx;
+    z-index: 999;
+}
+
+.choose_pay_way {
+    position: absolute;
+    top: 30%;
+    left: 2.5%;
+    width: 95%;
+    height: auto;
+    background-color: #ffffff;
+    z-index: 999;
+    border-radius: 10rpx;
+    padding-bottom: 40rpx;
+}
+
+.pay_title {
+    width: 100%;
+    text-align: center;
+    padding-top: 50rpx;
+    font-size: 32rpx;
+    padding-bottom: 20rpx;
+}
+
+.pay_title text {
+    color: #ff7012;
+}
+
+.way1 {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+    padding: 20rpx 80rpx;
+    box-sizing: border-box;
+}
+
+.pay_logo {
+    width: 65rpx;
+    height: 54rpx;
+}
+
+.choose {
+    width: 46rpx;
+    height: 46rpx;
+}
+
+.way_name {
+    display: inline-block;
+    width: 80%;
+    font-size: 34rpx;
+    padding-left: 30rpx;
+    position: relative;
+}
+
+.logo1 {
+    width: 55rpx;
+    height: 46rpx;
+}
+
+.now_challenge {
+    width: 90%;
+    margin-top: 80rpx;
+    height: 90rpx;
+    line-height: 90rpx;
+    background-color: #ff7012;
+    color: #ffffff;
+    font-size: 32rpx;
+}
+
+.yuE {
+    position: absolute;
+    bottom: -36rpx;
+    left: 30rpx;
+    color: #ff7012;
+    font-size: 30rpx;
+}
+
+.canvas_box {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 999;
+    border-radius: 10rpx;
+}
+
+.clear {
+    clear: both;
+}

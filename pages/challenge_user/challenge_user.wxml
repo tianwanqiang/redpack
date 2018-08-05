@@ -1,0 +1,10 @@
+<view class="content">
+    <view class="hint">本平台只展示最新200位参与用户</view>
+    <view class="show-user">
+        <view class="mould" wx:for="{{head_arr}}">
+            <image class="user_header" mode="aspectFill" src="{{item.head_img}}"></image>
+            <view class="user_name">{{item.name}}</view>
+        </view>
+        <view class="clear"></view>
+    </view>
+</view>

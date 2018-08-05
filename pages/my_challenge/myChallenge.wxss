@@ -1,0 +1,274 @@
+page {
+    width: 100%;
+    height: 100%;
+    font-family: "microsoft yahei";
+    position: relative;
+}
+
+.content {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.cover_content {
+    width: 90%;
+    height: auto;
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    background-color: #ffffff;
+    z-index: 11;
+    border-radius: 20rpx;
+    padding: 30rpx;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+
+.cover {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.3);
+    z-index: 10;
+}
+
+.bankcard {
+    font-size: 32rpx;
+}
+
+.bankcard text {
+    margin-left: 70rpx;
+    color: #ff7102;
+    padding: 10rpx 0;
+}
+
+.tip {
+    width: 100%;
+    text-align: center;
+    font-size: 32rpx;
+    padding: 10rpx 0;
+    color: #a8a8a8;
+}
+
+.service_charge {
+    width: 100%;
+    padding: 30rpx 0;
+    font-size: 32rpx;
+}
+
+.jinE {
+    width: 100%;
+    height: 100rpx;
+    display: flex;
+    flex-direction: row;
+    line-height: 100rpx;
+    font-size: 80rpx;
+    border-bottom: 2rpx solid #f3f3f3;
+    position: relative;
+}
+
+.in {
+    width: 95%;
+    height: 100%;
+    position: relative;
+    padding-left: 20rpx;
+}
+
+.line {
+    content: '';
+    width: 2rpx;
+    height: 65%;
+    background-color: #ff7102;
+    position: absolute;
+    left: 80rpx;
+    top: 20rpx;
+}
+
+.mymoney {
+    width: 100%;
+    padding: 30rpx 0;
+    font-size: 32rpx;
+    color: #a8a8a8;
+}
+
+.mymoney text {
+    padding-left: 10rpx;
+    color: #ff7102;
+    font-size: 32rpx;
+}
+
+.sure {
+    color: #ffffff;
+    margin-bottom: 20rpx;
+}
+
+.top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    background-color: #ff7102;
+    padding-bottom: 40rpx;
+}
+
+.top_title {
+    height: 50rpx;
+    color: #fff;
+    font-size: 32rpx;
+}
+
+.get_money {
+    height: 120rpx;
+    line-height: 120rpx;
+    font-size: 70rpx;
+    color: #ffffff;
+}
+
+.rule {
+    height: 50rpx;
+    color: #fff;
+    font-size: 32rpx;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.hint_img {
+    width: 32rpx;
+    height: 32rpx;
+    vertical-align: middle;
+}
+
+.hint_txt {
+    width: auto;
+    height: 40rpx;
+    margin: 0 10rpx;
+    border-bottom: 2rpx solid #ffb788;
+    color: #ffb788;
+    font-size: 30rpx;
+    line-height: 40rpx;
+}
+
+.mid {
+    width: 100%;
+    height: 120rpx;
+    background-color: #ff8331;
+    color: #ffffff;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+}
+
+.bar {
+    display: flex;
+    flex-direction: column;
+    width: 33.3%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+}
+
+.txt {
+    width: 100%;
+    height: auto;
+    font-size: 30rpx;
+}
+
+.leftLine::after {
+    content: '';
+    width: 2rpx;
+    height: 50%;
+    background-color: #ffa86f;
+    position: absolute;
+    right: 0;
+    bottom: 25%;
+}
+
+.space {
+    width: 100%;
+    height: 20rpx;
+    background-color: #f6f6f6;
+}
+
+.record {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 100rpx;
+}
+
+.rmb_img {
+    width: 40rpx;
+    height: 40rpx;
+    margin-left: 30rpx;
+}
+
+.record text {
+    padding: 0 10rpx;
+    font-size: 32rpx;
+}
+
+.main {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    border-top: 2rpx solid #f6f6f6;
+}
+
+.same1 {
+    width: 33.3%;
+    height: 120rpx;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 30rpx;
+}
+
+.same {
+    width: 33.3%;
+    height: 120rpx;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.starus {
+    font-size: 32rpx;
+    line-height: 36rpx;
+}
+
+.starus1 {
+    font-size: 24rpx;
+    color: #a8a8a8;
+    line-height: 36rpx;
+}
+
+.income {
+    color: #ff7102;
+    font-size: 32rpx;
+}
+
+.tixian {
+    width: 100%;
+    height: 100rpx;
+    line-height: 100rpx;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    font-size: 36rpx;
+    font-weight: bold;
+    border-top: 2rpx solid #f6f6f6;
+    box-shadow: 0 -10rpx 10rpx #f3f3f3;
+    background-color: #ffffff;
+}

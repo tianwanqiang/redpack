@@ -1,0 +1,45 @@
+<view class="content">
+    <view class="top">
+        <view class="top_title">昨日瓜分</view>
+        <view class="get_money">{{yesterday}}</view>
+        <view class="rule">
+            <image class="hint_img" src="../../image/my_challenge/hint.png"></image>
+            <text bindtap="tixian_rule" class="hint_txt">提现规则</text>
+        </view>
+    </view>
+    <view class="mid">
+        <view class="bar">
+            <view class="txt leftLine">合计瓜分(元)</view>
+            <view class="txt">{{harvest}}</view>
+        </view>
+        <view class="bar">
+            <view class="txt leftLine">累计契约(元)</view>
+            <view class="txt">{{contract}}</view>
+        </view>
+        <view class="bar">
+            <view class="txt">挑战次数(次)</view>
+            <view class="txt">{{join_count}}</view>
+        </view>
+    </view>
+    <view class="space"></view>
+    <view class="record">
+        <image class="rmb_img" src="../../image/my_challenge/rmb.png"></image>
+        <text>支付流水</text>
+    </view>
+    <scroll-view scrollY class="record_detail" style="height:50%;">
+        <view class="main" wx:for="{{list}}">
+            <view class="same1">
+                <view class="starus">{{item.day}}</view>
+                <view class="starus1">{{item.time}}</view>
+            </view>
+            <view class="same">
+                <view class="starus" style="color:{{item.type_txt=='挑战失败'?'#ff372d':'#000000'}}">{{item.type_txt}}</view>
+                <view class="starus1">{{item.project_name}}</view>
+            </view>
+            <view class="same">
+                <view class="income">{{item.amount}}</view>
+            </view>
+        </view>
+    </scroll-view>
+    <view bindtap="takeCash" class="tixian">提现</view>
+</view>

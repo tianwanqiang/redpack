@@ -1,0 +1,23 @@
+<view class="content">
+    <view class="top">
+        <view class="top_title">余额（元）</view>
+        <view class="get_money">{{balance}}</view>
+        <view class="rule">
+            <text class="hint_txt">账户安全保障中</text>
+        </view>
+    </view>
+    <view class="space"></view>
+    <view class="online_recharge">
+        <view class="online">在线充值</view>
+        <view class="recharge_money">
+            <view bindtap="choose" class="money_box {{index==n?addclass:''}}" data-index="{{index}}" wx:for="{{recharge_money}}">
+                <view class="money">{{item.money}}元</view>
+                <text>赠送{{item.give}}元</text>
+            </view>
+        </view>
+        <view class="hint">赠送金额不可提现,不可退款</view>
+        <input bindblur="btn" class="custom_money" placeholder="请输入金额10元—200元" placeholderClass="hint1" type="number" value="{{qian}}"></input>
+        <button bindtap="recharge" class="recharge">立即充值</button>
+        <view class="hint3">请放心充值，本平台支持退款服务</view>
+    </view>
+</view>

@@ -1,0 +1,36 @@
+<view class="content">
+    <view class="top">
+        <image bindtap="chooseImage" class="header" src="{{head}}"></image>
+        <view class="username">
+            <input bindinput="nickname" class="User_name" placeholder="请输入昵称" type="text" value="{{name}}"></input>
+        </view>
+        <image bindtap="chooseImage" class="camera_icon" src="../../image/personal_center/camara.png"></image>
+        <text bindtap="chooseImage" class="eidt_header">修改头像</text>
+    </view>
+    <view class="space"></view>
+    <view class="list line" wx:if="{{phone!=null}}">
+        <text class="bind">手机号</text>
+        <text class="bindphone1">{{phone}}</text>
+    </view>
+    <view class="list line" wx:else>
+        <text class="bind">绑定手机</text>
+        <button bindgetphonenumber="getPhoneNumber" class="bindphone" openType="getPhoneNumber">点击绑定手机号</button>
+    </view>
+    <view class="list line">
+        <text class="bind">姓名</text>
+        <button bindtap="bindbank" class="bindphone">点击绑定银行卡</button>
+    </view>
+    <view class="list line">
+        <text class="bind">银行卡</text>
+        <button bindtap="bindbank" class="bindphone">点击绑定银行卡</button>
+    </view>
+    <view class="list">
+        <text class="bind">卡号</text>
+        <button bindtap="bindbank" class="bindphone">点击绑定银行卡</button>
+    </view>
+    <button bindtap="updata" class="exit">保存</button>
+    <view class="safe_hint">
+        <image class="safe_icon" src="../../image/safety/safety_icon.png"></image>
+        <text class="txt">梦想打卡采用SSL SHA-2和2048位高强度加密确保数据安全，保障你的手机号银行卡信息安全</text>
+    </view>
+</view>
